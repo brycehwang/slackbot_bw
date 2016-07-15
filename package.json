@@ -1,0 +1,22 @@
+{
+  "name": "slackbot_bw",
+  "version": "1.0.0",
+  "description": "Slackbot for MIT Beaver Works camp",
+  "main": "lib/norrisbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.mit.edu:bhwang/slackbot_bw.git"
+  },
+  "keywords": [
+    "slackbot"
+  ],
+  "author": "Bryce Hwang",
+  "license": "ISC",
+  "dependencies": {
+    "slackbots": "^0.5.1",
+    "sqlite3": "^3.1.4"
+  }
+}
