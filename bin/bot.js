@@ -1,15 +1,29 @@
 'use strict';
 
-var NorrisBot = require('../lib/norrisbot');
+var botType = "dffdfd"
 
-var token = "xoxb-60007126743-mlEifU3XgNu3SXWwL1RpdSeV", //token for norrisbot
-	dbPath = process.env.BOT_DB_PATH,
-	name = process.env.BOT_NAME;
+if (botType == "norris"){
+	var NorrisBot = require('../lib/norrisbot');
 
-var norrisbot = new NorrisBot({
-	token: token,
-	dbPath: dbPath,
-	name: name
-});
+	var token = "xoxb-60007126743-mlEifU3XgNu3SXWwL1RpdSeV", //token for norrisbot
+		dbPath = process.env.BOT_DB_PATH,
+		name = process.env.BOT_NAME;
 
-norrisbot.run();
+	var norrisbot = new NorrisBot({
+		token: token,
+		dbPath: dbPath,
+		name: name
+	});
+	norrisbot.run();
+} else{
+	var TimmyBot = require('../lib/timmybot');
+	var token = "xoxb-59983757393-b7f7wByvAmckMDwm7G27sYn6",//insert API token here
+		dbPath = process.env.BOT_DB_PATH,
+		name = process.env.BOT_NAME;
+
+	var timmybot = new TimmyBot({
+		token: token,
+		name: name
+	});
+	timmybot.run();
+}
